@@ -21,11 +21,11 @@ class Cat :public Animal
         std::cout << "Meow\n";
     }
 };
-class Cow :public Animal
+class Goat :public Animal
 {
     void Voice() override
     {
-        std::cout << "Mooo\n";
+        std::cout << "Beeee\n";
     }
 };
 int main()
@@ -33,7 +33,7 @@ int main()
     Animal* animals[3];
     animals[0] = new Dog();
     animals[1] = new Cat();
-    animals[2] = new Cow();
+    animals[2] = new Goat();
 
     for (Animal* a : animals)
         a->Voice();
